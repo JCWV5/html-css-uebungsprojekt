@@ -4,67 +4,53 @@
 
 <head>
 
-    <!--first CSS lesson-->
+    <!--Version 6 CSS stylesheet & learning the building blocks by using different colors-->
 
     <title>PANGEA</title>
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        nav ul a {
-
-            color: #000;
-
-        }
-
-    </style>
-
 </head>
 
-<body style="background: #80cbc4  ;color: #000">
+<body>
 
+    <header class="main-header">
 
-    <div id="header img" align="center" style="background: #80cbc4;
-            padding: 12px 16px">
-    <a class="active" href="index.html">
-        <img src="assets/img/pangea-vektoren-logo.png";
-        alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte, verlinkt zur Startseite.";
-        width="25%">
-    </a>
-    </div>
+        <figure>
+            <a class="active" href="index.html">
+                <div class="container">
+                    <img class="logo" ; src="assets/img/pangea-vektoren-logo.png" ; <!--alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte, verlinkt zur Startseite." ;-->
+                    >
+                </div>
+            </a>
+        </figure>
 
-    <header id="main-header" style="
-        background:#80cbc4;
-        text-align: center;
-        padding: 4px;
-       ">
-        <h1>PANGEA</h1>
-        <!--<h3>One Word - One Blood - One Beat</h3>-->
-        <h3>⟲ going back to the roots of humanity ⟲</h3>
+        <section id="content-1" class="content-1">
+            <h1>PANGEA</h1>
+            <h3>⟲ going back to the roots of humanity ⟲</h3>
+        </section>
     </header>
 
 
 
-    <nav id="main-navbar">
-        
+    <nav class="main-navbar">
+
         <a href="index.html">
-            <!--<img src="assets/img/pangea-vektoren-logo.png">-->
         </a>
-        
-        <ul>
-            
-            <li><a href="about.html">About</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="podcast.html">Podcast</a></li>
-            <!--<li><a href="contact.html">Contact</a></li>-->
+        <section id="content-2" class="content-2">
+            <ul>
 
-        </ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <!--<li><a href="contact.html">Contact</a></li>-->
 
+            </ul>
+        </section>
     </nav>
 
-    <main id="inhalt" 
-          style="
+    <main class="inhalt" style="
             color: black;
             background: #80cbc4;
             width: 90%;
@@ -82,17 +68,14 @@
         </p>
 
     </main>
-    
-    <footer id="main-footer"                     align="center" style="background: #80cbc4;
-            padding: 20px 16px">
-      
+
+    <footer class="main-footer" align="center" style="padding: 20px 16px">
+
         <p>&copy; 2024 J.V.</p>
-        
+
     </footer>
 
 
 </body>
-
-
 
 </html>
