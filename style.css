@@ -1,7 +1,19 @@
+/*RESET*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1rem;
 }
 
 
@@ -13,33 +25,53 @@ body {
 
 
 header {
-    background: green;
+    background: url('assets/img/header-bg-color-fade-h320px.jpg') no-repeat top center;
+    background-size: cover;
+    /* Cover the entire header */
+    background-position: center;
+    /* Center the image */
+    height: 350px;
+    /* Set a height for the header */
+    color: white;
+    /* Text color */
+    display: flex;
+    /* Align items */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    /*text-align: center;*/
+
 }
 
-.content-1{
-    text-align: center;
-    background: yellow;
+.content-1 {
+    /*text-align: center;*/
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    line-height: 200%;
 }
 
 
 
+/*
 figure {
     align-content: center;
-    width: 500px;
-    height: 550px;
-    /* text-align: center;*/
+    width: 300px;
+    height: 300px;
+     text-align: center;
     margin: 0 auto;
     background: red;
 
 }
+*/
 
 .container {
     align-content: center;
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     /* text-align: center;*/
     margin: 0 auto;
-    background: yellow;
 }
 
 img {
@@ -48,32 +80,32 @@ img {
     overflow: hidden;
 }
 
-.content-2{
+.content-2 {
     text-align: center;
-    background: yellow;
+
 }
 
 nav #main-navbar ul {
     float: center;
     margin: 0 auto;
-    width: 30em;
+    width: 50em;
     height: 2em;
-    /*display: flex;*/
+    display: flex;
     text-align: center;
     grid-gap: 1.3em;
     list-style-type: none;
-    /*box-shadow: 0px 2px 4px rgba(0,0,0,0.144); */
+
 }
 
 
-nav li {
-    /*display: inline-block;*/
+nav ul li {
     text-align: center;
-    display: flex;
+    display: inline-block;
+    padding: 8px 20px;
     justify-content: center;
     align-items: center;
-    /*margin-top: ;
-            margin-right: ; */
+    margin-top: 8px;
+
 }
 
 nav li a {
@@ -83,27 +115,14 @@ nav li a {
     text-decoration: none;
 }
 
-/*.nav__item{
-            display: block;
-            padding: 15px;
-            text-align: center;
-            color: #000;
-                
-            flex-basis: 0;
-            flex-grow: 1;
-}*/
+nav li a:hover {
+    color: white
+}
 
 nav ul li .active {
     color: #fff;
 
 
-}
-
-/*nav img{
-            height: 310px;
-            position:absolute;
-            top: 170px;
-            transform: translate(0%, -50%)*/
 }
 
 nav ul a {
@@ -115,8 +134,12 @@ nav ul a {
 
 #inhalt {
     max-width: 900px;
-    margin: 20px auto
+    margin: 20px auto;
+    height: 100vh;
 }
 
 
+main-footer {
+    align-content: center; 
+    padding: 20px 16px,
 }
