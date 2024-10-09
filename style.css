@@ -6,7 +6,12 @@
     box-sizing: border-box;
 }
 
-h1,
+
+h1 {
+    font-size: 24pt;
+    padding-bottom: 0.5rem;
+}
+
 h2,
 h3,
 h4,
@@ -17,6 +22,7 @@ p {
 }
 
 
+
 body {
     background: #80cbc4;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,14 +31,14 @@ body {
 
 
 header {
-    background: url('assets/img/header-bg-color-fade-h320px.jpg') no-repeat top center;
+    background: url('assets/img/header-bg-color-fade-h320px-2.jpg') no-repeat top center;
     background-size: cover;
     /* Cover the entire header */
     background-position: center;
     /* Center the image */
     height: 350px;
     /* Set a height for the header */
-    color: white;
+    color: black;
     /* Text color */
     display: flex;
     /* Align items */
@@ -41,13 +47,12 @@ header {
     align-items: center;
     /* Center vertically */
     /*text-align: center;*/
-
 }
 
 .content-1 {
     /*text-align: center;*/
     padding-left: 16px;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 24px;
     line-height: 200%;
 }
@@ -62,7 +67,6 @@ figure {
      text-align: center;
     margin: 0 auto;
     background: red;
-
 }
 */
 
@@ -94,7 +98,6 @@ nav #main-navbar ul {
     text-align: center;
     grid-gap: 1.3em;
     list-style-type: none;
-
 }
 
 
@@ -105,7 +108,6 @@ nav ul li {
     justify-content: center;
     align-items: center;
     margin-top: 8px;
-
 }
 
 nav li a {
@@ -121,8 +123,6 @@ nav li a:hover {
 
 nav ul li .active {
     color: #fff;
-
-
 }
 
 nav ul a {
@@ -139,7 +139,67 @@ nav ul a {
 }
 
 
-main-footer {
-    align-content: center; 
-    padding: 20px 16px,
+.main-footer {
+    display: flex;
+    justify-content: center;
+    /*align-content: center;
+    text-align: center;
+    padding: 20px 16px,*/
 }
+
+.content-4 {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer {
+    /*display: flex;
+    justify-content: space-around;*/
+    /*text-decoration: none;
+    list-style-type: none;*/
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem;
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #80cbc4;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-main:{
+    display: flex;
+    margin-bottom: 4rem;
+    
+}
+
+.footer-column {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 1rem;
+}
+/*
+.footer-heading {
+    margin-bottom: 1rem;
+    
+}*/
+
+.footer-bottom {
+    margin-top: 2rem;
+}
+
+
