@@ -24,6 +24,9 @@ p {
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: #80cbc4;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -36,7 +39,8 @@ header {
     /* Cover the entire header */
     background-position: center;
     /* Center the image */
-    height: 350px;
+    min-height: 30vw;
+    padding-top: 3em;
     /* Set a height for the header */
     color: black;
     /* Text color */
@@ -44,7 +48,7 @@ header {
     /* Align items */
     justify-content: center;
     /* Center horizontally */
-    align-items: center;
+    /*align-items: center;*/
     /* Center vertically */
     /*text-align: center;*/
 }
@@ -52,12 +56,14 @@ header {
 .content-1 {
     /*text-align: center;*/
     padding-left: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 100px;
     line-height: 200%;
 }
 
-
+figure.logo {
+    width: 300px;
+    height: 300px;
+}
 
 /*
 figure {
@@ -71,11 +77,9 @@ figure {
 */
 
 .container {
-    align-content: center;
-    width: 300px;
-    height: 300px;
-    /* text-align: center;*/
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 1em 16px;
 }
 
 img {
@@ -132,10 +136,62 @@ nav ul a {
 }
 
 
+main {
+    flex-grow: 1;
+    min-height: 70vh;
+    padding-top: 1.5em;
+}
+
 #inhalt {
-    max-width: 900px;
+    
+    /*max-width: 900px;
     margin: 20px auto;
-    height: 100vh;
+    height: 100vh;*/
+}
+
+table {
+   /* min-height: 100vh;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-color: hsla(350,30%,10%,0.2);
+    font-size: 25px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    /*box-shadow: 3px 3px 3px hsla(350,50%,50%,0.3);*/ 
+}
+
+td, th {
+    padding: 15px 30px;
+    text-align: left;
+}
+
+thead {
+    /*box-shadow: 0 3px 6px color #00000030;*/
+    background-color: darkslategrey;
+    color: white;
+}
+
+th:first-child {
+    border-radius: 10px 0 0 0;    
+}
+
+th:last-child {
+    border-radius: 0 10px 0 0;    
+}
+
+tr: nth-child (even) {
+    background-color:  hsla(350,30%,10%,0.6); 
+}
+
+tbody a /*ticket-link*/ {
+    color: darkslategrey;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+tbody a:hover /*ticket-link*/ {
+    color: white;
 }
 
 
@@ -161,6 +217,7 @@ footer {
     background-color: black;
     color: white;
     padding: 1rem 1rem;
+    min-height: 8vh;
 }
 
 
@@ -180,17 +237,17 @@ footer a:hover {
     margin: 0 auto;
 }
 
-.footer-main:{
+.footer-main {
     display: flex;
-    margin-bottom: 4rem;
-    
+    justify-content: center;
+        grid-gap: 2em;
 }
 
 .footer-column {
-    flex-basis: 200px;
+    /*
     flex-grow: 1;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 1rem;*/
 }
 /*
 .footer-heading {
@@ -199,7 +256,25 @@ footer a:hover {
 }*/
 
 .footer-bottom {
-    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center
+        
+    /*grid-gap: 5em;*/
+}
+.copyright >*,
+.footer-bottom >* {
+   margin-right: 1em;   
+}
+.copyright span,
+.footer-bottom span {
+    margin-right: 3em;
 }
 
+.copyright i ,
+.footer-bottom i {
+    font-size: 1.5em;
+}
 
+/*.footer-bottom i.fa-facebook {
+    font-size: 1.3em;
+}*/
