@@ -4,97 +4,117 @@
 
 <head>
 
-    <!--first CSS lesson-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PANGEA</title>
+    <title>PANGAEA</title>
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        nav ul a {
-
-            color: #000;
-
-        }
-
-    </style>
+    <script src="https://kit.fontawesome.com/f73a186d62.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body style="background: #80cbc4  ;color: #000">
+<body>
 
+    <header class="main-header">
 
-    <div id="header img" align="center" style="background: #80cbc4;
-            padding: 12px 16px">
+        <figure class="logo">
+            <a class="active" href="index.html">
+                <div>
+                    <img class="logo" ; src="assets/img/pangea-vektoren-logo.png" ; alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte vor einer Sanddüne im Hintergrund, verlinkt zur Startseite." ;>
+                </div>
+            </a>
+        </figure>
 
-        <img src="assets/img/pangea-vektoren-logo.png";
-        alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte, verlinkt zur Startseite.";
-        >
-    </div>
-
-    <header id="main-header" style="
-        background:#80cbc4;
-        text-align: center;
-        padding: 4px;
-       ">
-        <h1>PANGEA</h1>
-        <!--<h3>One Word - One Blood - One Beat</h3>-->
-        <h3>⟲ going back to the roots of humanity ⟲</h3>
+        <section id="content-1" class="content-1">
+            <h1>PANGAEA</h1>
+            <h3>going back to the roots of humanity
+                <p>with united musical experiences ⟲</p>
+            </h3>
+        </section>
     </header>
 
 
 
-    <nav id="main-navbar">
-        
+    <nav class="main-navbar">
+
         <a href="index.html">
-            <!--<img src="assets/img/pangea-vektoren-logo.png">-->
         </a>
-        
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a 
-            href="music.html">Music</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="bio.html">Bio</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a class="active" href="contact.html">Contact</a></li>
-
-        </ul>
-
+        <section id="content-2" class="content-2">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="podcasts.html">Podcasts</a></li>
+                <li><a class="active" ; href="contact.html">Contact</a></li>
+            </ul>
+        </section>
     </nav>
 
-    <main id="inhalt" 
-          style="
-            color: black;
-            background: #80cbc4;
-            width: 90%;
-            padding: 8px 20px;
-            ">
+    <main class="inhalt">
+        <div class="container">
 
-        <h3>...</h3>
+            <div class="contact-container">
 
-        <p>
-            ...
-        </p>
+                <form action="" class="contact-left">
+                    <div class="contact-left-title">
+                    <h2>Get in touch!</h2>
+                    <hr>
+                     </div>
+                    <input type="text" name="name" placeholder="What's your name?" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="What's your e-mail adress?" class="contact-inputs" required>
+                    <textarea name="message" placeholder="What's your massages?" class="contact-inputs" required></textarea>
+                    <button type="submit">Submit<img src="assets/img/arrow_icon.png" alt="">
+                    </button>
+                </form>
+                
+                <div class="contact-right">
+                    <img src="assets/img/postbox-ballon-cut.png" alt="">
+                    
+                </div>
+            </div>
 
-        <h3>...</h3>
+            <!--<h3>Contact Form</h3>-->
 
-        <p>
-            ...
-            
-        </p>
 
+
+
+
+
+
+        </div>
     </main>
-    
-    <footer id="main-footer"                     align="center" style="background: #80cbc4;
-            padding: 20px 16px">
-      
-        <p>&copy; 2024 J.V.</p>
-        
+
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+
+                <div class="copyright">
+                    <span class="copyright">&copy; 2024 J.V.</span>
+                    <a href="https://soundcloud.com/b2pangaea" class="footer-social"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-spotify"></i></a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Terms</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#" class="footer-link">Cookie Choices</a>
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
 
 
 </body>
-
-
 
 </html>

@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/* general TEXT Parameters */
 
 h1 {
     font-size: 24pt;
@@ -32,6 +33,7 @@ body {
     color: black;
 }
 
+/* HEADER with LOGO & Phrase */
 
 header {
     background: url('assets/img/header-bg-color-fade-h320px-2.jpg') no-repeat top center;
@@ -93,6 +95,8 @@ img {
 
 }
 
+/*NAVIGATION-BAR*/
+
 nav #main-navbar ul {
     float: center;
     margin: 0 auto;
@@ -135,6 +139,7 @@ nav ul a {
     list-style-type: none;
 }
 
+/*MAIN BODY Elements */
 
 main {
     flex-grow: 1;
@@ -143,25 +148,30 @@ main {
 }
 
 #inhalt {
-    
+
     /*max-width: 900px;
     margin: 20px auto;
     height: 100vh;*/
 }
 
+
+/* TABLE/Tour Dates */
+
+
 table {
-   /* min-height: 100vh;*/
+    /* min-height: 100vh;*/
     /*display: flex;*/
     /*justify-content: center;*/
     /*align-items: center;*/
-    background-color: hsla(350,30%,10%,0.2);
+    background-color: hsla(350, 30%, 10%, 0.2);
     font-size: 25px;
     border-radius: 10px;
     border-collapse: collapse;
-    /*box-shadow: 3px 3px 3px hsla(350,50%,50%,0.3);*/ 
+    /*box-shadow: 3px 3px 3px hsla(350,50%,50%,0.3);*/
 }
 
-td, th {
+td,
+th {
     padding: 15px 30px;
     text-align: left;
 }
@@ -173,27 +183,121 @@ thead {
 }
 
 th:first-child {
-    border-radius: 10px 0 0 0;    
+    border-radius: 10px 0 0 0;
 }
 
 th:last-child {
-    border-radius: 0 10px 0 0;    
+    border-radius: 0 10px 0 0;
 }
 
 tr: nth-child (even) {
-    background-color:  hsla(350,30%,10%,0.6); 
+    background-color: hsla(350, 30%, 10%, 0.6);
 }
 
-tbody a /*ticket-link*/ {
+tbody a {
     color: darkslategrey;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-tbody a:hover /*ticket-link*/ {
+tbody a:hover {
     color: white;
 }
 
+/* CONTACT FORMULAR */
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    grid-gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    /*color: ;*/
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 198px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 23px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 23px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid black;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    grid-gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+
+/* Mobile Responsive Design Styles */
+
+@media (max-width:800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+}
+
+
+/* FOOTER */
 
 .main-footer {
     display: flex;
@@ -229,7 +333,7 @@ footer a {
 
 footer a:hover {
     color: #80cbc4;
-    
+
 }
 
 .container {
@@ -240,15 +344,20 @@ footer a:hover {
 .footer-main {
     display: flex;
     justify-content: center;
-        grid-gap: 2em;
+    grid-gap: 2em;
 }
 
 .footer-column {
+    /*display: table-cell;
+    vertical-align: middle;
+    border: 2px dashed black;*/
+
     /*
     flex-grow: 1;
     text-align: center;
     padding-top: 1rem;*/
 }
+
 /*
 .footer-heading {
     margin-bottom: 1rem;
@@ -257,20 +366,22 @@ footer a:hover {
 
 .footer-bottom {
     padding-top: 2rem;
-    text-align: center
-        
+    text-align: center;
+
     /*grid-gap: 5em;*/
 }
-.copyright >*,
-.footer-bottom >* {
-   margin-right: 1em;   
+
+.copyright > *,
+.footer-bottom > * {
+    margin-right: 1em;
 }
+
 .copyright span,
 .footer-bottom span {
     margin-right: 3em;
 }
 
-.copyright i ,
+.copyright i,
 .footer-bottom i {
     font-size: 1.5em;
 }
