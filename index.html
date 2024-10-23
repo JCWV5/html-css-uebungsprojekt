@@ -4,7 +4,7 @@
 
 <head>
 
-    <!--Version 14 fixing music & podcast gallery with CSS + start to code mobile nav-bar-->
+    <!--Version 16 making everything it responsive-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,7 +22,7 @@
         <figure class="logo">
             <a class="active" href="index.html">
                 <div>
-                    <img class="logo" ; src="assets/img/pangea-vektoren-logo.png" ; alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte vor einer Sanddüne im Hintergrund, verlinkt zur Startseite." ;>
+                    <img class="logo" ; src="assets/img/pangea-vektoren-logo-new-contur.png"; alt="Pangea-Logo, bestehend aus stilisierter Vektorgrafik von Pangea gedruckt auf goldener funkelnder Schallplatte vor einer Sanddüne im Hintergrund, verlinkt zur Startseite." ;>
                 </div>
             </a>
         </figure>
@@ -38,6 +38,7 @@
 
     <nav class="main-navbar">
 
+<!--Mobile NAV-->
         <input type="checkbox" id="sidebar-active">
         <label for="sidebar-active" class="open-sidebar-button">
             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368">
@@ -53,10 +54,8 @@
             </label>
         </div>
 
-
-        <a href="index.html">
-        </a>
-        <section id="content-2" class="content-2">
+<!--Desktop NAV-->
+        
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="music.html">Music</a></li>
@@ -65,7 +64,7 @@
                 <li><a href="podcasts.html">Podcasts</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </section>
+        
     </nav>
 
     <main class="inhalt">
@@ -108,12 +107,15 @@
         </section>
     </footer>-->
 
-    <footer>
+    <!--<footer>
         <div class="container">
             <div class="footer-main">
+                
+                <div class="footer-column">
+                    <span>&copy; 2024 J.V.</span>
+                </div>
 
                 <div class="copyright">
-                    <span class="copyright">&copy; 2024 J.V.</span>
                     <a href="https://soundcloud.com/b2pangaea" class="footer-social"><i class="fab fa-soundcloud"></i></a>
                     <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
                     <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
@@ -124,9 +126,11 @@
                 <div class="footer-column">
                     <a href="#" class="footer-link">Privacy</a>
                 </div>
+                
                 <div class="footer-column">
                     <a href="#" class="footer-link">Terms</a>
                 </div>
+                
                 <div class="footer-column">
                     <a href="#" class="footer-link">Cookie Choices</a>
                 </div>
@@ -135,8 +139,41 @@
 
         </div>
 
-    </footer>
+    </footer>-->
 
+    <footer class="footer-variation-02">
+        <div class="container">
+            <div class="footer-main">
+
+
+                <p>&copy; 2024 J.V.</p>
+
+                <div class="social-icons no-break">
+                    <a href="https://soundcloud.com/b2pangaea" class="footer-social"><i class="fab fa-soundcloud"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-social"><i class="fab fa-spotify"></i></a>
+                </div>
+
+                <nav class="nav-bar footer-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="no-break">Cookie Choices</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 

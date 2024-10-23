@@ -45,12 +45,17 @@ body {
 /* HEADER with LOGO & Phrase */
 
 header {
-    background: url('assets/img/header-bg-color-fade-h320px-2.jpg') no-repeat top center;
+    background: url('assets/img/header-bg-color-fade-2700x340px.jpg') no-repeat top center;
     background-size: cover;
     /* Cover the entire header */
     background-position: center;
     /* Center the image */
-    min-height: 30vw;
+    /*min-height: 45vw;
+    max-height: 10px;*/
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    object-position: top center;
     padding-top: 1em;
     /* Set a height for the header */
     color: black;
@@ -456,6 +461,94 @@ tbody a:hover {
 }
 
 
+/*IMG GALLERY */
+
+.container-gallery {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+/*
+    display: grid;
+*/
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+.img-box {
+    width: 110px;
+    height: 550px;
+    margin: 12px;
+    border-radius: 55px;
+    background: url(assets/img/dj-pic-spaceholder-1.jpg);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2) {
+    background: url(assets/img/dj-pic-spaceholder-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(3) {
+    background: url(assets/img/dj-pic-spaceholder-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(4) {
+    background: url(assets/img/dj-pic-spaceholder-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(5) {
+    background: url(assets/img/dj-pic-spaceholder-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(6) {
+    background: url(assets/img/dj-pic-spaceholder-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(7) {
+    background: url(assets/img/dj-pic-spaceholder-7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box:nth-child(8) {
+    background: url(assets/img/dj-pic-spaceholder-8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3 {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity: 0.5s;
+}
+
+.img-box:hover {
+    width: 350px;
+    cursor: pointer;    
+}
+
+.img-box:hover h3 {
+    opacity: 1;
+    bottom: 25px;
+}
 
 /* FOOTER */
 
@@ -549,3 +642,22 @@ footer a:hover {
 /*.footer-bottom i.fa-facebook {
     font-size: 1.3em;
 }*/
+
+
+
+/* Mobile Responsive Design Styles */
+/*
+Media Queries für Responsive Design sollten immer 
+ganz unten im Stylesheet stehen.
+*/
+
+@media (max-width:800px) { /*Warum 800px als Breakpoint?*/
+    
+    .contact-inputs {
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
+}
+
