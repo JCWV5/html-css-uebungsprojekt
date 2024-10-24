@@ -17,7 +17,7 @@ reponsive NAV - https://www.youtube.com/watch?v=8eFeIFKAKHw
 /* general TEXT Parameters */
 
 h1 {
-    font-size:10vw;
+    /*font-size:10vw;*/
     padding-bottom: 0.5rem;
 }
 
@@ -32,10 +32,10 @@ p {
 
 /*Font Atributes Desktop*/
 
-p {
+/*p {
     font-size: 5vh;
     line-height:140%;
-}
+}*/
 
 /*Font Atributes Mobile*/
 
