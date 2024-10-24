@@ -1,5 +1,6 @@
 /*Resources
 CSS Subgrid - https://www.youtube.com/watch?v=Yl8hg2FG20Q&t=766s 
+
 reponsive NAV - https://www.youtube.com/watch?v=8eFeIFKAKHw
 */
 
@@ -16,7 +17,7 @@ reponsive NAV - https://www.youtube.com/watch?v=8eFeIFKAKHw
 /* general TEXT Parameters */
 
 h1 {
-    font-size: 24pt;
+    font-size:10vw;
     padding-bottom: 0.5rem;
 }
 
@@ -28,6 +29,15 @@ h6,
 p {
     margin-bottom: 1rem;
 }
+
+/*Font Atributes Desktop*/
+
+p {
+    font-size: 5vh;
+    line-height:140%;
+}
+
+/*Font Atributes Mobile*/
 
 
 
@@ -427,6 +437,15 @@ tbody a:hover {
 }
 */
 
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
 .box-music {
     width: 300px;
     height: 520px;
@@ -446,19 +465,15 @@ tbody a:hover {
 .box-music:hover,
 .box-podcast:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: 0.5s;
-
 }
 
-.wrapper {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
+.box-music-img,
+.box-podcast-img{
+    border-radius: 25px; 
 }
+
 
 
 /*IMG GALLERY */
@@ -473,6 +488,9 @@ tbody a:hover {
 
 .gallery {
     display: flex;
+/*
+    flex-wrap: wrap;
+*/
     align-items: center;
     justify-content: center;
     padding: 3em;
@@ -634,10 +652,10 @@ footer a:hover {
     margin-right: 3em;
 }
 
-.copyright i,
+/*.copyright i,
 .footer-bottom i {
     font-size: 1.5em;
-}
+}*/
 
 /*.footer-bottom i.fa-facebook {
     font-size: 1.3em;
